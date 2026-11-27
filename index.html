@@ -30,7 +30,6 @@ label{display:block;font-size:13px;color:var(--gris);margin:12px 0 4px}
 .muted{color:var(--gris);font-size:14px}
 .chip{display:inline-block;font-size:12px;padding:2px 9px;border-radius:999px;background:var(--crema-2);color:var(--oliva)}
 
-/* anuncio + cabecera */
 .anuncio{background:var(--oliva);color:#f1ead8;text-align:center;font-size:13px;padding:8px 14px}
 .top{position:sticky;top:0;z-index:20;background:var(--blanco);border-bottom:1px solid var(--borde)}
 .top-in{max-width:1200px;margin:auto;display:flex;align-items:center;gap:18px;padding:14px 18px}
@@ -49,21 +48,19 @@ label{display:block;font-size:13px;color:var(--gris);margin:12px 0 4px}
 .menu-cats button{border:none;background:none;padding:6px 10px;font-size:14px;white-space:nowrap;color:var(--gris);border-radius:999px}
 .menu-cats button.on{color:var(--oliva);font-weight:600;background:var(--crema)}
 
-/* hero */
 .hero{background:linear-gradient(100deg,var(--crema) 55%,var(--crema-2));position:relative;overflow:hidden}
 .hero-in{max-width:1200px;margin:auto;padding:70px 18px;display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center}
 .hero .kicker{font-size:13px;letter-spacing:2px;text-transform:uppercase;color:var(--oro);font-weight:600}
 .hero h1{font-size:62px;margin:12px 0 16px}
 .hero p{color:var(--gris);max-width:460px;font-size:16px}
 .hero .botones{display:flex;gap:12px;margin-top:26px;flex-wrap:wrap}
-.hero .botones a,.btn{display:inline-block;text-decoration:none;padding:13px 22px;border-radius:8px;font-size:14px;font-weight:600}
+.btn{display:inline-block;text-decoration:none;padding:13px 22px;border-radius:8px;font-size:14px;font-weight:600}
 .btn-oliva{background:var(--oliva);color:#fff}
 .btn-linea{border:1px solid var(--oliva);color:var(--oliva)}
 .hero-foto{aspect-ratio:4/5;border-radius:200px 200px 16px 16px;background:linear-gradient(160deg,#fff8ea,#d9c9a6);display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:110px;color:var(--oro);opacity:.85}
 .garantias{display:flex;gap:26px;margin-top:40px;flex-wrap:wrap;font-size:13px;color:var(--gris)}
 .garantias b{display:block;color:var(--tinta);font-size:14px}
 
-/* secciones */
 .seccion{max-width:1200px;margin:0 auto;padding:56px 18px}
 .eyebrow{text-align:center;font-size:12px;letter-spacing:2.5px;text-transform:uppercase;color:var(--oro);font-weight:600}
 .titulo{text-align:center;font-size:40px;margin:8px 0 28px}
@@ -79,7 +76,6 @@ label{display:block;font-size:13px;color:var(--gris);margin:12px 0 4px}
 .promo p{margin:0;font-size:15px;opacity:.9}
 .promo a{align-self:flex-start;margin-top:12px;text-decoration:none;background:#fff;color:var(--oliva);padding:10px 18px;border-radius:8px;font-size:14px;font-weight:600}
 
-/* productos */
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:22px}
 .card{display:flex;flex-direction:column;gap:6px}
 .foto{position:relative;aspect-ratio:1/1;border-radius:12px;background:linear-gradient(140deg,var(--crema),var(--crema-2));display:flex;align-items:center;justify-content:center;overflow:hidden}
@@ -96,10 +92,8 @@ label{display:block;font-size:13px;color:var(--gris);margin:12px 0 4px}
 .card .acc button.pri{width:100%}
 .wa-btn{display:block;text-align:center;text-decoration:none;border:1px solid var(--wa);color:#128c4a;border-radius:8px;padding:8px;font-size:14px;font-weight:600}
 .vacio{grid-column:1/-1;text-align:center;color:var(--gris);padding:40px}
-.ver-todo{display:flex;justify-content:center;margin-top:30px}
 
-/* testimonios + newsletter + footer */
-.testi{background:var(--crema);}
+.testi{background:var(--crema)}
 .testi-in{max-width:1200px;margin:auto;padding:56px 18px;display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
 .testi blockquote{margin:0;background:#fff;border-radius:14px;padding:24px;font-size:15px;color:var(--tinta)}
 .testi .estrellas{color:var(--oro);letter-spacing:2px;margin-bottom:10px}
@@ -108,9 +102,6 @@ label{display:block;font-size:13px;color:var(--gris);margin:12px 0 4px}
 .news-in{max-width:1200px;margin:auto;padding:36px 18px;display:flex;gap:24px;align-items:center;justify-content:space-between;flex-wrap:wrap}
 .news h3{font-size:30px}
 .news p{margin:4px 0 0;font-size:14px;opacity:.9}
-.news form{display:flex;gap:8px;flex:1;max-width:460px}
-.news input{border-radius:8px;border:none}
-.news button{background:var(--oro);border-color:var(--oro);color:#fff;font-weight:600}
 footer.pie{background:var(--crema);border-top:1px solid var(--borde)}
 .pie-in{max-width:1200px;margin:auto;padding:44px 18px 26px;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:28px;font-size:14px}
 .pie h4{margin:0 0 10px;font-size:14px}
@@ -118,7 +109,6 @@ footer.pie{background:var(--crema);border-top:1px solid var(--borde)}
 .pie a:hover{color:var(--oliva)}
 .pie-legal{max-width:1200px;margin:auto;padding:0 18px 26px;font-size:12px;color:var(--gris);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
 
-/* carrito */
 .fondo{position:fixed;inset:0;background:rgba(20,20,10,.38);z-index:40;display:none}
 .fondo.on{display:block}
 .drawer{position:fixed;top:0;right:0;height:100%;width:min(410px,100%);background:#fff;z-index:41;transform:translateX(102%);transition:transform .25s;display:flex;flex-direction:column;box-shadow:-10px 0 30px rgba(0,0,0,.12)}
@@ -139,7 +129,6 @@ footer.pie{background:var(--crema);border-top:1px solid var(--borde)}
 .total{display:flex;justify-content:space-between;font-size:18px;font-weight:600;margin:6px 0 12px}
 .drawer .wa-btn{background:var(--wa);border-color:var(--wa);color:#fff;padding:13px;font-size:15px}
 
-/* admin */
 .admin .top .menu,.admin .top .buscar,.admin .top .iconos,.admin .menu-cats,.admin .anuncio{display:none}
 .adm{max-width:1200px;margin:auto;padding:22px 18px}
 .adm-head{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;margin-bottom:16px}
@@ -167,7 +156,6 @@ th{font-size:11px;color:var(--gris);text-transform:uppercase;letter-spacing:.6px
 .check{display:flex;gap:8px;align-items:center;margin-top:12px;color:var(--tinta);font-size:14px}
 .check input{width:auto}
 
-/* modal y aviso */
 .modal{position:fixed;inset:0;background:rgba(20,20,10,.42);display:none;align-items:center;justify-content:center;z-index:60;padding:16px}
 .modal.on{display:flex}
 .caja{background:#fff;border-radius:16px;padding:22px;width:min(540px,100%);max-height:92vh;overflow:auto}
@@ -199,7 +187,6 @@ th{font-size:11px;color:var(--gris);text-transform:uppercase;letter-spacing:.6px
  .card h3{font-size:18px}
  .promo{padding:30px 24px;min-height:190px}
  .promo h3{font-size:32px}
- .news form{flex-direction:column}
 }
 </style>
 </head>
@@ -252,22 +239,15 @@ th{font-size:11px;color:var(--gris);text-transform:uppercase;letter-spacing:.6px
 <div id="toast" class="toast"></div>
 
 <script>
-const LS='beyou_v1', LS_CART='beyou_carrito_v1';
+const SB_URL='https://zxrbmvwzhvgwduuzbgfa.supabase.co';
+const SB_KEY='sb_publishable_VMPNlswdGeITt7vlhXONhg_eAWh9aTf';
+const LS_CART='beyou_carrito_v1', SS_SESION='beyou_sesion';
 const CATEGORIAS=['Collares','Pulseras','Chokers','Aretes','Anillos','Tobilleras','Sets','Accesorios'];
 const PAGOS=['Efectivo','Transferencia','Tarjeta'];
 const TABS=[['inv','Inventario'],['ven','Ventas'],['cli','Clientes'],['aju','Ajustes']];
-const EJEMPLOS=[
- {nombre:'Collar de perla dorada',categoria:'Collares',precio:850,costo:300,stock:4,descripcion:'Perla cultivada sobre cadena bañada en oro.'},
- {nombre:'Pulsera de cristal azul',categoria:'Pulseras',precio:450,costo:150,stock:6,descripcion:'Cuentas de cristal checo con cierre ajustable.'},
- {nombre:'Choker de terciopelo negro',categoria:'Chokers',precio:350,costo:90,stock:3,descripcion:'Terciopelo con dije minimalista.'},
- {nombre:'Aretes de aro dorados',categoria:'Aretes',precio:300,costo:100,stock:8,descripcion:'Aros ligeros bañados en oro.'},
- {nombre:'Anillo de plata con circón',categoria:'Anillos',precio:1200,costo:520,stock:2,descripcion:'Plata .925 con circón central.'},
- {nombre:'Tobillera de hilo y dije',categoria:'Tobilleras',precio:250,costo:60,stock:5,descripcion:'Hilo encerado con dije de estrella.'}
-];
 
 /* ---------- utilidades ---------- */
 const $=(s,r=document)=>r.querySelector(s);
-const uid=()=>Date.now().toString(36)+Math.random().toString(36).slice(2,7);
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const rd=n=>'RD$ '+Number(n||0).toLocaleString('es-DO',{maximumFractionDigits:2});
 const norm=s=>String(s??'').normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase();
@@ -277,27 +257,86 @@ const mesActual=()=>new Date().getMonth()+1;
 const fmtCumple=c=>c?c.split('-').reverse().slice(0,2).join('/'):'';
 const primerNombre=n=>String(n||'').trim().split(/\s+/)[0]||'';
 let tToast;
-function toast(msg){const el=$('#toast');el.textContent=msg;el.classList.add('on');clearTimeout(tToast);tToast=setTimeout(()=>el.classList.remove('on'),1900);}
+function toast(msg){const el=$('#toast');el.textContent=msg;el.classList.add('on');clearTimeout(tToast);tToast=setTimeout(()=>el.classList.remove('on'),2200);}
 function telWa(t){let d=String(t||'').replace(/\D/g,'');if(d.length===10)d='1'+d;return d;}
-function waLink(texto,numero){const num=numero!==undefined?numero:telWa(db.config.whatsapp);return `https://wa.me/${num}?text=${encodeURIComponent(texto)}`;}
-function fotoHTML(p,clase){return p.foto?`<img src="${p.foto}" alt="${esc(p.nombre)}" loading="lazy">`:`<span class="inicial">${esc((p.nombre||'B').charAt(0).toUpperCase())}</span>`;}
+function waLink(texto,numero){const num=numero!==undefined?numero:telWa(CONF.whatsapp);return `https://wa.me/${num}?text=${encodeURIComponent(texto)}`;}
+function fotoHTML(p){return p.foto?`<img src="${p.foto}" alt="${esc(p.nombre)}" loading="lazy">`:`<span class="inicial">${esc((p.nombre||'B').charAt(0).toUpperCase())}</span>`;}
 function setPath(obj,path,val){const k=path.split('.');let o=obj;for(let i=0;i<k.length-1;i++)o=o[k[i]];o[k[k.length-1]]=val;}
 function valorDe(el){if(el.type==='checkbox')return el.checked;if(el.type==='number')return Number(el.value)||0;return el.value;}
+const stat=(l,v)=>`<div class="stat"><span>${l}</span><b>${v}</b></div>`;
 
-/* ---------- datos ---------- */
-function nuevaDB(){return {productos:[],ventas:[],clientes:[],config:{tienda:'Beyou',whatsapp:'18492488970',empaqueNormal:0,empaqueRegalo:150,descCumple:10,pin:'1234'}};}
-function cargar(){try{const d=JSON.parse(localStorage.getItem(LS));if(d&&Array.isArray(d.productos)){return Object.assign(nuevaDB(),d,{config:Object.assign(nuevaDB().config,d.config||{})});}}catch(e){}return nuevaDB();}
-function guardar(){try{localStorage.setItem(LS,JSON.stringify(db));}catch(e){toast('No se pudo guardar. Quita fotos grandes o descarga un respaldo.');}}
-function leerCarrito(){try{const c=JSON.parse(localStorage.getItem(LS_CART));if(c&&Array.isArray(c.items))return c;}catch(e){}return {items:[],empaque:'normal'};}
-function guardarCarrito(){try{localStorage.setItem(LS_CART,JSON.stringify(carrito));}catch(e){}}
-
-let db=cargar();
+/* ---------- estado ---------- */
+let CONF={tienda:'Beyou',whatsapp:'',empaqueNormal:0,empaqueRegalo:150,descCumple:10};
+let db={productos:[],clientes:[],ventas:[]};
+let cargado=false, errorCarga='';
+let sesion=leerSesion();
 let carrito=leerCarrito();
 let estado={tab:'inv',cat:'Todas',q:'',qAdm:''};
 let borrador=nuevoBorrador();
 let editId=null, fotoTmp='';
 
 function nuevoBorrador(){return {cliente:'',nuevo:{nombre:'',telefono:'',direccion:'',cumple:'',notas:''},items:[],empaque:'normal',descCumple:false,descMonto:0,pago:'Efectivo',nota:'',prodSel:'',cant:1};}
+function leerSesion(){try{const s=JSON.parse(sessionStorage.getItem(SS_SESION));return s&&s.access_token&&s.expires_at>Date.now()?s:null;}catch(e){return null;}}
+function guardarSesion(s){sesion=s;try{if(s)sessionStorage.setItem(SS_SESION,JSON.stringify(s));else sessionStorage.removeItem(SS_SESION);}catch(e){}}
+function leerCarrito(){try{const c=JSON.parse(localStorage.getItem(LS_CART));if(c&&Array.isArray(c.items))return c;}catch(e){}return {items:[],empaque:'normal'};}
+function guardarCarrito(){try{localStorage.setItem(LS_CART,JSON.stringify(carrito));}catch(e){}}
+
+/* ---------- Supabase ---------- */
+async function sb(path,{method='GET',body,prefer}={}){
+  const h={apikey:SB_KEY,'Content-Type':'application/json'};
+  if(sesion) h.Authorization='Bearer '+sesion.access_token;
+  if(prefer) h.Prefer=prefer;
+  const r=await fetch(SB_URL+'/rest/v1/'+path,{method,headers:h,body:body!==undefined?JSON.stringify(body):undefined});
+  const txt=await r.text();
+  if(r.status===401&&sesion){guardarSesion(null);throw new Error('Tu sesión venció. Vuelve a entrar.');}
+  if(!r.ok){let m=txt;try{m=JSON.parse(txt).message||txt;}catch(e){}throw new Error(m||('Error '+r.status));}
+  return txt?JSON.parse(txt):null;
+}
+async function entrar(email,pass){
+  const r=await fetch(SB_URL+'/auth/v1/token?grant_type=password',{method:'POST',headers:{apikey:SB_KEY,'Content-Type':'application/json'},body:JSON.stringify({email,password:pass})});
+  const j=await r.json().catch(()=>({}));
+  if(!r.ok) throw new Error(j.error_description||j.msg||'Correo o contraseña incorrectos');
+  guardarSesion({access_token:j.access_token,email:j.user.email,expires_at:Date.now()+(j.expires_in||3600)*1000-60000});
+}
+function salirAdmin(){guardarSesion(null);db.clientes=[];db.ventas=[];location.hash='#/';pintar();toast('Sesión cerrada');}
+
+function normProd(p){return {id:p.id,nombre:p.nombre,categoria:p.categoria,descripcion:p.descripcion||'',precio:Number(p.precio)||0,costo:Number(p.costo)||0,stock:Number(p.stock)||0,foto:p.foto||'',activo:p.activo!==false};}
+function normCliente(c){return {id:c.id,nombre:c.nombre,telefono:c.telefono||'',direccion:c.direccion||'',cumple:c.cumple||'',notas:c.notas||''};}
+function normVenta(v,clis){const cl=clis.find(c=>c.id===v.cliente_id);return {id:v.id,fecha:v.fecha,clienteId:v.cliente_id,clienteNombre:cl?cl.nombre:'Sin cliente',
+  items:(v.venta_items||[]).map(i=>({id:i.producto_id,nombre:i.nombre,precio:Number(i.precio),costo:Number(i.costo),cant:i.cant})),
+  descuento:Number(v.descuento)||0,descCumple:v.desc_cumple_pct||0,cumpleAnio:v.cumple_anio,empaque:v.empaque,costoEmpaque:Number(v.costo_empaque)||0,total:Number(v.total)||0,pago:v.pago,nota:v.nota||'',anulada:!!v.anulada};}
+
+async function cargarTodo(){
+  const [prods,cfg]=await Promise.all([sb('productos?select=*&order=nombre.asc'),sb('configuracion?select=valor&clave=eq.general')]);
+  db.productos=prods.map(normProd);
+  if(cfg&&cfg[0]) CONF=Object.assign({},CONF,cfg[0].valor);
+  if(sesion){
+    const [clis,vens]=await Promise.all([sb('clientes?select=*&order=nombre.asc'),sb('ventas?select=*,venta_items(*)&order=fecha.desc&limit=300')]);
+    db.clientes=clis.map(normCliente);
+    db.ventas=vens.map(v=>normVenta(v,db.clientes));
+  }
+}
+async function recargar(){
+  try{await cargarTodo();errorCarga='';}catch(e){errorCarga=e.message;}
+  cargado=true; pintar();
+}
+
+/* escrituras */
+async function remotoGuardarProducto(datos,id){
+  const path=id?`productos?id=eq.${id}`:'productos';
+  const [r]=await sb(path,{method:id?'PATCH':'POST',body:datos,prefer:'return=representation'});
+  return normProd(r);
+}
+async function remotoBorrarProducto(id){await sb(`productos?id=eq.${id}`,{method:'DELETE'});}
+async function remotoStock(id,stock){await sb(`productos?id=eq.${id}`,{method:'PATCH',body:{stock}});}
+function cuerpoCliente(c){return {nombre:c.nombre,telefono:c.telefono||'',direccion:c.direccion||'',cumple:c.cumple||null,notas:c.notas||''};}
+async function remotoGuardarCliente(datos,id){
+  const path=id?`clientes?id=eq.${id}`:'clientes';
+  const [r]=await sb(path,{method:id?'PATCH':'POST',body:cuerpoCliente(datos),prefer:'return=representation'});
+  return normCliente(r);
+}
+async function remotoBorrarCliente(id){await sb(`clientes?id=eq.${id}`,{method:'DELETE'});}
+async function remotoGuardarConfig(){await sb('configuracion?clave=eq.general',{method:'PATCH',body:{valor:CONF}});}
 
 /* ---------- tienda ---------- */
 function pintarCats(){
@@ -305,8 +344,11 @@ function pintarCats(){
 }
 function renderTienda(){
   pintarCats();
+  const pie=$('#pieWa'); if(pie) pie.href=waLink('Hola Beyou 👋 Tengo una pregunta.');
+  if(!cargado){$('#app').innerHTML='<div class="vacio">Cargando la colección…</div>';return;}
+  if(errorCarga){$('#app').innerHTML=`<div class="vacio">No pudimos cargar la colección.<br><button class="pri" style="margin-top:14px" data-act="reintentar">Intentar de nuevo</button><br><small class="muted">${esc(errorCarga)}</small></div>`;return;}
   const q=norm(estado.q);
-  const lista=db.productos.filter(p=>p.activo!==false
+  const lista=db.productos.filter(p=>p.activo
     &&(estado.cat==='Todas'||p.categoria===estado.cat)
     &&(!q||norm([p.nombre,p.categoria,p.descripcion].join(' ')).includes(q)));
   const hero=(estado.cat==='Todas'&&!q)?`
@@ -315,7 +357,7 @@ function renderTienda(){
       <div class="kicker">Nueva colección</div>
       <h1>Piezas que te hacen brillar cada día</h1>
       <p>Joyería y bisutería de temporada, elegida con cariño. Mira, elige y pídenos por WhatsApp. Empaque de regalo disponible.</p>
-      <div class="botones"><a class="btn-oliva" href="#/" data-act="cat" data-cat="Todas">Ver la colección</a><a class="btn-linea" href="#/" data-act="cat" data-cat="Anillos">Nuevos anillos</a></div>
+      <div class="botones"><a class="btn btn-oliva" href="#/" data-act="cat" data-cat="Todas">Ver la colección</a><a class="btn btn-linea" href="#/" data-act="cat" data-cat="Anillos">Nuevos anillos</a></div>
       <div class="garantias">
         <div><b>Calidad cuidada</b>Materiales seleccionados</div>
         <div><b>Pedido por WhatsApp</b>Te confirmamos al instante</div>
@@ -339,7 +381,7 @@ function renderTienda(){
       <div class="foto">${fotoHTML(p)}${p.stock<=0?'<span class="agotado-tag">Agotado</span>':''}</div>
       <div class="cat">${esc(p.categoria)}</div>
       <h3>${esc(p.nombre)}</h3>
-      <div class="desc">${esc(p.descripcion||'')}</div>
+      <div class="desc">${esc(p.descripcion)}</div>
       <div class="precio">${rd(p.precio)}</div>
       <div class="stock ${p.stock<=0?'agotado':''}">${p.stock>0?`Disponibles: ${p.stock}`:'Agotado por ahora'}</div>
       <div class="acc">
@@ -348,16 +390,14 @@ function renderTienda(){
       </div>
     </article>`).join('');
   $('#app').innerHTML=hero+`<section class="seccion" style="padding-top:${hero?'0':'30px'}">${titulo}<div class="grid">${tarjetas||`<div class="vacio">${db.productos.length?'No encontramos piezas con esa búsqueda.':'Pronto subiremos nuevas piezas. ¡Vuelve pronto!'}</div>`}</div></section>`;
-  const pie=$('#pieWa'); if(pie) pie.href=waLink('Hola Beyou 👋 Tengo una pregunta.');
 }
 
-function carritoLineas(){return carrito.items.map(it=>({it,p:db.productos.find(x=>x.id===it.id)})).filter(x=>x.p);}
+function carritoLineas(){return carrito.items.map(it=>({it,p:db.productos.find(x=>x.id===it.id)})).filter(x=>x.p&&x.p.activo);}
 function pintarCarrito(){
   const lineas=carritoLineas();
-  const cnt=lineas.reduce((a,x)=>a+x.it.cant,0);
-  $('#cnt').textContent=cnt;
+  $('#cnt').textContent=lineas.reduce((a,x)=>a+x.it.cant,0);
   const sub=lineas.reduce((a,x)=>a+x.p.precio*x.it.cant,0);
-  const costoEmp=carrito.empaque==='regalo'?db.config.empaqueRegalo:db.config.empaqueNormal;
+  const costoEmp=carrito.empaque==='regalo'?CONF.empaqueRegalo:CONF.empaqueNormal;
   $('#cbody').innerHTML=lineas.length?lineas.map(({it,p})=>`
     <div class="linea">
       <div class="mini">${fotoHTML(p)}</div>
@@ -366,12 +406,12 @@ function pintarCarrito(){
     </div>`).join('')+`
     <label style="margin-top:16px">Empaque</label>
     <div class="opciones">
-      <div class="opcion ${carrito.empaque!=='regalo'?'on':''}" data-act="empaque" data-v="normal">Normal <small>${costoEmp&&carrito.empaque!=='regalo'?'':db.config.empaqueNormal?rd(db.config.empaqueNormal):'Gratis'}</small></div>
-      <div class="opcion ${carrito.empaque==='regalo'?'on':''}" data-act="empaque" data-v="regalo">🎁 De regalo <small>${rd(db.config.empaqueRegalo)}</small></div>
+      <div class="opcion ${carrito.empaque!=='regalo'?'on':''}" data-act="empaque" data-v="normal">Normal <small>${CONF.empaqueNormal?rd(CONF.empaqueNormal):'Gratis'}</small></div>
+      <div class="opcion ${carrito.empaque==='regalo'?'on':''}" data-act="empaque" data-v="regalo">🎁 De regalo <small>${rd(CONF.empaqueRegalo)}</small></div>
     </div>`:'<p class="muted" style="padding:30px 0;text-align:center">Tu carrito está vacío. Agrega una pieza para empezar.</p>';
   $('#cfoot').innerHTML=`
     <div class="total"><span>Total estimado</span><span>${rd(sub+(lineas.length?costoEmp:0))}</span></div>
-    <a class="wa-btn ${lineas.length?'':'disabled'}" href="${lineas.length?waLink(msgPedido(lineas,sub,costoEmp)):'#'}" target="_blank" rel="noopener" ${lineas.length?'':'onclick="return false" style="opacity:.45"'}>Enviar pedido por WhatsApp</a>
+    ${lineas.length?`<a class="wa-btn" href="${waLink(msgPedido(lineas,sub,costoEmp))}" target="_blank" rel="noopener">Enviar pedido por WhatsApp</a>`:'<button disabled style="width:100%">Enviar pedido por WhatsApp</button>'}
     <p class="muted" style="font-size:12px;margin:8px 0 0">Te confirmamos disponibilidad y el pago por WhatsApp.</p>`;
 }
 function msgPedido(lineas,sub,costoEmp){
@@ -397,16 +437,21 @@ function toggleCarrito(abrir){$('#drawer').classList.toggle('on',abrir);$('#fond
 /* ---------- admin: base ---------- */
 function renderAdmin(){
   const app=$('#app');
-  if(sessionStorage.getItem('beyou_admin')!=='1'){
-    app.innerHTML=`<div class="login"><h2>Administración</h2><p class="muted">Ingresa el PIN para continuar.</p>
-      <form id="pinform"><label>PIN</label><input id="pin" type="password" inputmode="numeric" autocomplete="off"><div style="margin-top:14px"><button class="pri" style="width:100%">Entrar</button></div></form>
-      <p class="muted" style="font-size:12px;margin-top:14px">Cambia el PIN en Ajustes.</p></div>`;
-    $('#pinform').onsubmit=e=>{e.preventDefault();if($('#pin').value===db.config.pin){sessionStorage.setItem('beyou_admin','1');renderAdmin();}else toast('PIN incorrecto');};
+  if(!sesion){
+    app.innerHTML=`<div class="login"><h2>Administración</h2><p class="muted">Entra con el correo de la administradora.</p>
+      <form id="formLogin"><label>Correo</label><input id="lmail" type="email" autocomplete="username" required><label>Contraseña</label><input id="lpass" type="password" autocomplete="current-password" required>
+      <div style="margin-top:16px"><button class="pri" style="width:100%">Entrar</button></div></form></div>`;
+    $('#formLogin').onsubmit=async e=>{
+      e.preventDefault();
+      const btn=e.target.querySelector('button'); btn.disabled=true;
+      try{await entrar($('#lmail').value.trim(),$('#lpass').value);await recargar();toast('Bienvenida');}
+      catch(err){toast(err.message);btn.disabled=false;}
+    };
     return;
   }
   app.innerHTML=`<div class="adm">
-    <div class="adm-head"><div><div class="eyebrow" style="text-align:left">Panel</div><h2 style="font-size:34px">${esc(db.config.tienda)}</h2></div>
-      <div style="display:flex;gap:8px"><a class="btn-linea btn" style="padding:9px 14px" href="#/">Ver tienda</a></div></div>
+    <div class="adm-head"><div><div class="eyebrow" style="text-align:left">Panel</div><h2 style="font-size:34px">${esc(CONF.tienda)}</h2></div>
+      <div style="display:flex;gap:8px"><a class="btn btn-linea" style="padding:9px 14px" href="#/">Ver tienda</a></div></div>
     <div class="tabs">${TABS.map(([k,n])=>`<button class="${estado.tab===k?'on':''}" data-act="tab" data-tab="${k}">${n}</button>`).join('')}</div>
     <div style="margin-top:16px" id="tab"></div></div>`;
   pintarTab();
@@ -417,25 +462,29 @@ function pintarTab(){
   else if(estado.tab==='cli')pintarClientes();
   else pintarAjustes();
 }
-const stat=(l,v)=>`<div class="stat"><span>${l}</span><b>${v}</b></div>`;
+function pintar(){
+  const admin=location.hash==='#/admin';
+  document.body.classList.toggle('admin',admin);
+  if(admin) renderAdmin(); else renderTienda();
+  pintarCarrito();
+}
 
 /* ---------- admin: inventario ---------- */
 function pintarInventario(){
   const ps=db.productos;
-  const piezas=ps.reduce((a,p)=>a+p.stock,0);
   $('#tab').innerHTML=`
-    <div class="stats">${stat('Productos',ps.length)}${stat('Piezas en stock',piezas)}${stat('Valor a precio venta',rd(ps.reduce((a,p)=>a+p.precio*p.stock,0)))}${stat('Agotados',ps.filter(p=>p.stock<=0).length)}</div>
+    <div class="stats">${stat('Productos',ps.length)}${stat('Piezas en stock',ps.reduce((a,p)=>a+p.stock,0))}${stat('Valor a precio venta',rd(ps.reduce((a,p)=>a+p.precio*p.stock,0)))}${stat('Agotados',ps.filter(p=>p.stock<=0).length)}</div>
     <div class="panel"><div class="fila"><div style="flex:3"><label>Buscar</label><input data-search="inv" placeholder="Nombre, categoría…" value="${esc(estado.qAdm)}"></div><div style="flex:0 0 auto"><button class="pri" data-act="nuevoProd">+ Nuevo producto</button></div></div>
     <div id="lista" style="margin-top:14px"></div></div>`;
   pintarListaInv();
 }
 function pintarListaInv(){
   const q=norm(estado.qAdm);
-  const lista=db.productos.filter(p=>!q||norm(p.nombre+' '+p.categoria+' '+(p.descripcion||'')).includes(q)).sort((a,b)=>a.nombre.localeCompare(b.nombre,'es'));
+  const lista=db.productos.filter(p=>!q||norm(p.nombre+' '+p.categoria+' '+p.descripcion).includes(q)).sort((a,b)=>a.nombre.localeCompare(b.nombre,'es'));
   $('#lista').innerHTML=lista.length?`<div class="tabla"><table><thead><tr><th></th><th>Producto</th><th>Categoría</th><th>Precio</th><th>Costo</th><th>Stock</th><th></th></tr></thead><tbody>
     ${lista.map(p=>`<tr>
       <td><div class="thumb">${fotoHTML(p)}</div></td>
-      <td><b>${esc(p.nombre)}</b>${p.ejemplo?' <span class="chip">ejemplo</span>':''}${p.activo===false?' <span class="chip">oculto</span>':''}</td>
+      <td><b>${esc(p.nombre)}</b>${p.activo?'':' <span class="chip">oculto</span>'}</td>
       <td>${esc(p.categoria)}</td><td>${rd(p.precio)}</td><td>${rd(p.costo)}</td>
       <td><div class="qty"><button class="peq" data-act="stock" data-id="${p.id}" data-d="-1">−</button><b>${p.stock}</b><button class="peq" data-act="stock" data-id="${p.id}" data-d="1">+</button></div></td>
       <td style="white-space:nowrap"><button class="peq" data-act="editProd" data-id="${p.id}">Editar</button> <button class="peq peligro" data-act="delProd" data-id="${p.id}">Eliminar</button></td>
@@ -460,22 +509,35 @@ function abrirProducto(id){
     <label>Foto</label>
     <div class="fila"><div id="prev" style="flex:0 0 auto">${f.foto?`<div class="thumb" style="width:80px;height:80px"><img src="${f.foto}"></div>`:'<div class="thumb" style="width:80px;height:80px">'+esc((f.nombre||'B').charAt(0).toUpperCase())+'</div>'}</div>
       <div><input type="file" accept="image/*" name="archivo"></div></div>
-    <label class="check"><input type="checkbox" name="activo" ${f.activo!==false?'checked':''}> Visible en la tienda</label>
+    <label class="check"><input type="checkbox" name="activo" ${f.activo?'checked':''}> Visible en la tienda</label>
     <div class="fila" style="margin-top:18px;justify-content:flex-end"><button type="button" class="ghost" data-act="cerrarModal">Cancelar</button><button class="pri">Guardar</button></div>
   </form>`);
-  $('#fprod').onsubmit=e=>{
+  $('#fprod').onsubmit=async e=>{
     e.preventDefault();
+    const btn=e.target.querySelector('button.pri'); btn.disabled=true;
     const fd=new FormData(e.target);
     const datos={nombre:String(fd.get('nombre')).trim(),categoria:fd.get('categoria'),descripcion:String(fd.get('descripcion')).trim(),
       precio:Number(fd.get('precio'))||0,costo:Number(fd.get('costo'))||0,stock:Math.max(0,parseInt(fd.get('stock'),10)||0),foto:fotoTmp,activo:fd.get('activo')==='on'};
-    if(!datos.nombre) return toast('Falta el nombre');
-    if(editId) Object.assign(db.productos.find(x=>x.id===editId),datos);
-    else db.productos.push(Object.assign({id:uid(),creado:Date.now()},datos));
-    guardar(); cerrarModal(); pintarTab(); toast('Producto guardado');
+    if(!datos.nombre){btn.disabled=false;return toast('Falta el nombre');}
+    try{
+      const guardado=await remotoGuardarProducto(datos,editId);
+      if(editId) Object.assign(db.productos.find(x=>x.id===editId),guardado);
+      else db.productos.push(guardado);
+      cerrarModal(); pintarTab(); toast('Producto guardado');
+    }catch(err){btn.disabled=false;toast('No se guardó: '+err.message);}
   };
 }
-function ajustarStock(id,d){const p=db.productos.find(x=>x.id===id);if(!p)return;p.stock=Math.max(0,p.stock+d);guardar();pintarTab();}
-function eliminarProducto(id){const p=db.productos.find(x=>x.id===id);if(!p)return;if(!confirm(`¿Eliminar "${p.nombre}"? Las ventas anteriores se conservan.`))return;db.productos=db.productos.filter(x=>x.id!==id);guardar();pintarTab();toast('Producto eliminado');}
+async function ajustarStock(id,d){
+  const p=db.productos.find(x=>x.id===id); if(!p) return;
+  const n=Math.max(0,p.stock+d);
+  try{await remotoStock(id,n);p.stock=n;pintarTab();}catch(err){toast('No se actualizó: '+err.message);}
+}
+async function eliminarProducto(id){
+  const p=db.productos.find(x=>x.id===id); if(!p) return;
+  if(!confirm(`¿Eliminar "${p.nombre}"? Las ventas anteriores se conservan.`)) return;
+  try{await remotoBorrarProducto(id);db.productos=db.productos.filter(x=>x.id!==id);pintarTab();toast('Producto eliminado');}
+  catch(err){toast('No se eliminó: '+err.message);}
+}
 function comprimir(file){
   return new Promise((res,rej)=>{
     const r=new FileReader();
@@ -500,13 +562,13 @@ function elegibleCumple(){
 }
 function calcVenta(){
   const subtotal=borrador.items.reduce((a,i)=>a+i.precio*i.cant,0);
-  const pct=(borrador.descCumple&&elegibleCumple())?db.config.descCumple:0;
+  const pct=(borrador.descCumple&&elegibleCumple())?CONF.descCumple:0;
   const descCumpleMonto=subtotal*pct/100;
   const descManual=Math.max(0,Number(borrador.descMonto)||0);
   const descuento=Math.min(subtotal,descCumpleMonto+descManual);
-  const empaque=borrador.empaque==='regalo'?db.config.empaqueRegalo:db.config.empaqueNormal;
-  const total=Math.max(0,subtotal-descuento+(borrador.items.length?empaque:0));
-  return {subtotal,pct,descCumpleMonto,descManual,descuento,empaque:borrador.items.length?empaque:0,total};
+  const empaque=borrador.items.length?(borrador.empaque==='regalo'?CONF.empaqueRegalo:CONF.empaqueNormal):0;
+  const total=Math.max(0,subtotal-descuento+empaque);
+  return {subtotal,pct,descCumpleMonto,descManual,descuento,empaque,total};
 }
 function pintarVentas(){
   const hoy=fechaLocal(), mes=hoy.slice(0,7);
@@ -515,9 +577,8 @@ function pintarVentas(){
   const ventasHoy=activas.filter(v=>delDia(v)===hoy);
   const ventasMes=activas.filter(v=>delDia(v).slice(0,7)===mes);
   const ganancia=ventasMes.reduce((a,v)=>a+v.items.reduce((b,i)=>b+(i.precio-(i.costo||0))*i.cant,0)-v.descuento,0);
-  const disponibles=db.productos.filter(p=>p.stock>0&&p.activo!==false);
+  const disponibles=db.productos.filter(p=>p.stock>0&&p.activo);
   const clientes=[...db.clientes].sort((a,b)=>a.nombre.localeCompare(b.nombre,'es'));
-  const c=calcVenta();
   const elegible=elegibleCumple();
   const recientes=[...db.ventas].sort((a,b)=>new Date(b.fecha)-new Date(a.fecha)).slice(0,40);
   $('#tab').innerHTML=`
@@ -534,7 +595,7 @@ function pintarVentas(){
       <div class="fila"><div><label>Nombre *</label><input data-bind="nuevo.nombre" value="${esc(borrador.nuevo.nombre)}"></div>
         <div><label>Teléfono</label><input data-bind="nuevo.telefono" value="${esc(borrador.nuevo.telefono)}"></div></div>
       <div class="fila"><div><label>Dirección</label><input data-bind="nuevo.direccion" value="${esc(borrador.nuevo.direccion)}"></div>
-        <div><label>Cumpleaños</label><input type="date" data-bind="nuevo.cumple" value="${esc(borrador.nuevo.cumple)}"></div></div>`:''}
+        <div><label>Cumpleaños</label><input type="date" data-bind="nuevo.cumple" value="${esc(borrador.nuevo.cumple)}" class="bind-change"></div></div>`:''}
 
     <label>Agregar pieza</label>
     <div class="fila">
@@ -553,15 +614,15 @@ function pintarVentas(){
 
     <div class="fila" style="margin-top:6px">
       <div><label>Empaque</label><select data-bind="empaque" class="bind-change">
-        <option value="normal" ${borrador.empaque!=='regalo'?'selected':''}>Normal (${rd(db.config.empaqueNormal)})</option>
-        <option value="regalo" ${borrador.empaque==='regalo'?'selected':''}>De regalo (${rd(db.config.empaqueRegalo)})</option></select></div>
+        <option value="normal" ${borrador.empaque!=='regalo'?'selected':''}>Normal (${rd(CONF.empaqueNormal)})</option>
+        <option value="regalo" ${borrador.empaque==='regalo'?'selected':''}>De regalo (${rd(CONF.empaqueRegalo)})</option></select></div>
       <div><label>Forma de pago</label><select data-bind="pago" class="bind-change">${PAGOS.map(p=>`<option ${borrador.pago===p?'selected':''}>${p}</option>`).join('')}</select></div>
     </div>
     <div class="fila">
       <div><label>Descuento RD$ (manual)</label><input type="number" min="0" data-bind="descMonto" data-totales value="${borrador.descMonto}"></div>
       <div><label>Nota</label><input data-bind="nota" value="${esc(borrador.nota)}"></div>
     </div>
-    ${elegible?`<label class="check"><input type="checkbox" data-bind="descCumple" ${borrador.descCumple?'checked':''} class="bind-change"> 🎂 Descuento de cumpleaños ${db.config.descCumple}%</label>`:''}
+    ${elegible?`<label class="check"><input type="checkbox" data-bind="descCumple" ${borrador.descCumple?'checked':''} class="bind-change"> 🎂 Descuento de cumpleaños ${CONF.descCumple}%</label>`:''}
     <div class="totales" id="totales"></div>
     <div style="margin-top:14px"><button class="pri" data-act="registrarVenta" style="width:100%">Registrar venta</button></div>
   </div>
@@ -607,50 +668,68 @@ function cambiarCantVenta(id,d){
 function reciboTexto(v){
   const nom=primerNombre(v.clienteNombre!=='Sin cliente'?v.clienteNombre:'');
   const lineas=v.items.map(i=>`- ${i.cant} x ${i.nombre} (${rd(i.precio*i.cant)})`).join('\n');
-  return `Hola${nom?' '+nom:''} 💛 Gracias por tu compra en ${db.config.tienda}.\n\n${lineas}\n${v.descuento?`Descuento: -${rd(v.descuento)}\n`:''}${v.costoEmpaque?`Empaque ${v.empaque==='regalo'?'de regalo':'normal'}: ${rd(v.costoEmpaque)}\n`:''}*Total: ${rd(v.total)}*\n\n¡Que lo disfrutes! ✨`;
+  return `Hola${nom?' '+nom:''} 💛 Gracias por tu compra en ${CONF.tienda}.\n\n${lineas}\n${v.descuento?`Descuento: -${rd(v.descuento)}\n`:''}${v.costoEmpaque?`Empaque ${v.empaque==='regalo'?'de regalo':'normal'}: ${rd(v.costoEmpaque)}\n`:''}*Total: ${rd(v.total)}*\n\n¡Que lo disfrutes! ✨`;
 }
-function registrarVenta(){
+async function registrarVenta(btn){
   if(!borrador.items.length) return toast('Agrega al menos una pieza');
-  let cliente=null;
-  if(borrador.cliente==='__nuevo'){
-    const n=borrador.nuevo;
-    if(!String(n.nombre).trim()) return toast('Escribe el nombre del cliente nuevo');
-    cliente={id:uid(),nombre:n.nombre.trim(),telefono:n.telefono.trim(),direccion:n.direccion.trim(),cumple:n.cumple,notas:'',creado:Date.now()};
-  } else if(borrador.cliente){
-    cliente=db.clientes.find(c=>c.id===borrador.cliente)||null;
+  if(btn) btn.disabled=true;
+  try{
+    let clienteId=null, clienteNombre='Sin cliente', clienteTel='';
+    if(borrador.cliente==='__nuevo'){
+      const n=borrador.nuevo;
+      if(!String(n.nombre).trim()) throw new Error('Escribe el nombre del cliente nuevo');
+      const nuevo=await remotoGuardarCliente({nombre:n.nombre.trim(),telefono:n.telefono.trim(),direccion:n.direccion.trim(),cumple:n.cumple,notas:''},null);
+      db.clientes.push(nuevo); clienteId=nuevo.id; clienteNombre=nuevo.nombre; clienteTel=nuevo.telefono;
+    } else if(borrador.cliente){
+      const cl=db.clientes.find(c=>c.id===borrador.cliente);
+      if(cl){clienteId=cl.id;clienteNombre=cl.nombre;clienteTel=cl.telefono;}
+    }
+    for(const it of borrador.items){
+      const p=db.productos.find(x=>x.id===it.id);
+      if(!p||p.stock<it.cant) throw new Error(`No hay suficiente stock de ${it.nombre}`);
+    }
+    const c=calcVenta();
+    const anio=new Date().getFullYear();
+    const [row]=await sb('ventas',{method:'POST',prefer:'return=representation',body:{
+      cliente_id:clienteId,total:c.total,descuento:c.descuento,empaque:borrador.empaque==='regalo'?'regalo':'normal',
+      costo_empaque:c.empaque,pago:borrador.pago,nota:borrador.nota.trim(),desc_cumple_pct:c.pct,cumple_anio:c.pct?anio:null,anulada:false}});
+    await sb('venta_items',{method:'POST',body:borrador.items.map(i=>({venta_id:row.id,producto_id:i.id,nombre:i.nombre,precio:i.precio,costo:i.costo||0,cant:i.cant}))});
+    for(const it of borrador.items){
+      const p=db.productos.find(x=>x.id===it.id);
+      await remotoStock(p.id,p.stock-it.cant);
+      p.stock-=it.cant;
+    }
+    const venta={id:row.id,fecha:row.fecha,clienteId,clienteNombre,items:borrador.items.map(i=>({id:i.id,nombre:i.nombre,precio:i.precio,costo:i.costo||0,cant:i.cant})),
+      descuento:c.descuento,descCumple:c.pct,cumpleAnio:c.pct?anio:null,empaque:borrador.empaque==='regalo'?'regalo':'normal',costoEmpaque:c.empaque,total:c.total,pago:borrador.pago,nota:borrador.nota.trim(),anulada:false};
+    db.ventas.unshift(venta);
+    borrador=nuevoBorrador();
+    pintarTab();
+    abrirModal(`<h2>Venta registrada</h2><p class="muted">Total ${rd(venta.total)} · ${esc(venta.pago)}</p>
+      ${clienteTel?`<a class="wa-btn" style="margin-top:12px;padding:12px" href="${waLink(reciboTexto(venta),telWa(clienteTel))}" target="_blank" rel="noopener">Enviar recibo a ${esc(primerNombre(clienteNombre))} por WhatsApp</a>`:''}
+      <div class="fila" style="margin-top:14px;justify-content:flex-end"><button class="pri" data-act="cerrarModal">Listo</button></div>`);
+  }catch(err){
+    if(btn) btn.disabled=false;
+    toast(err.message);
   }
-  for(const it of borrador.items){
-    const p=db.productos.find(x=>x.id===it.id);
-    if(!p||p.stock<it.cant) return toast(`No hay suficiente stock de ${it.nombre}`);
-  }
-  const c=calcVenta();
-  const anio=new Date().getFullYear();
-  for(const it of borrador.items){const p=db.productos.find(x=>x.id===it.id);p.stock-=it.cant;}
-  const venta={id:uid(),fecha:new Date().toISOString(),clienteId:cliente?cliente.id:null,clienteNombre:cliente?cliente.nombre:'Sin cliente',
-    items:borrador.items.map(i=>({id:i.id,nombre:i.nombre,precio:i.precio,costo:i.costo||0,cant:i.cant})),
-    subtotal:c.subtotal,descuento:c.descuento,descCumple:c.pct,cumpleAnio:c.pct?anio:null,
-    empaque:borrador.empaque==='regalo'?'regalo':'normal',costoEmpaque:c.empaque,total:c.total,pago:borrador.pago,nota:borrador.nota.trim(),anulada:false};
-  if(cliente&&borrador.cliente==='__nuevo') db.clientes.push(cliente);
-  db.ventas.push(venta);
-  guardar();
-  borrador=nuevoBorrador();
-  pintarTab();
-  abrirModal(`<h2>Venta registrada</h2><p class="muted">Total ${rd(venta.total)} · ${esc(venta.pago)}</p>
-    ${cliente&&cliente.telefono?`<a class="wa-btn" style="margin-top:12px;padding:12px" href="${waLink(reciboTexto(venta),telWa(cliente.telefono))}" target="_blank" rel="noopener">Enviar recibo a ${esc(primerNombre(cliente.nombre))} por WhatsApp</a>`:''}
-    <div class="fila" style="margin-top:14px;justify-content:flex-end"><button class="pri" data-act="cerrarModal">Listo</button></div>`);
 }
-function anularVenta(id){
+async function anularVenta(id){
   const v=db.ventas.find(x=>x.id===id); if(!v||v.anulada) return;
   if(!confirm('¿Anular esta venta? Las piezas vuelven al inventario.')) return;
-  for(const i of v.items){const p=db.productos.find(x=>x.id===i.id);if(p)p.stock+=i.cant;}
-  v.anulada=true; guardar(); pintarTab(); toast('Venta anulada y stock devuelto');
+  try{
+    await sb(`ventas?id=eq.${id}`,{method:'PATCH',body:{anulada:true}});
+    for(const i of v.items){
+      const p=db.productos.find(x=>x.id===i.id);
+      if(p){await remotoStock(p.id,p.stock+i.cant);p.stock+=i.cant;}
+    }
+    v.anulada=true; pintarTab(); toast('Venta anulada y stock devuelto');
+  }catch(err){toast('No se anuló: '+err.message);}
 }
 
 /* ---------- admin: clientes ---------- */
 function pintarClientes(){
   const mes=mesActual();
   const cumpleMes=db.clientes.filter(c=>c.cumple&&Number(c.cumple.slice(5,7))===mes).sort((a,b)=>a.cumple.slice(8)-b.cumple.slice(8));
-  const msgCumple=c=>`¡Feliz cumpleaños ${primerNombre(c.nombre)}! 🎉 Desde ${db.config.tienda} queremos regalarte un ${db.config.descCumple}% de descuento en tu próxima compra este mes. ¡Te esperamos! 💛`;
+  const msgCumple=c=>`¡Feliz cumpleaños ${primerNombre(c.nombre)}! 🎉 Desde ${CONF.tienda} queremos regalarte un ${CONF.descCumple}% de descuento en tu próxima compra este mes. ¡Te esperamos! 💛`;
   $('#tab').innerHTML=`
     <div class="stats">${stat('Clientes',db.clientes.length)}${stat('Cumpleaños este mes',cumpleMes.length)}</div>
     <div class="panel"><h3>🎂 Cumpleaños de este mes</h3>
@@ -666,14 +745,14 @@ function pintarClientes(){
 }
 function pintarListaCli(){
   const q=norm(estado.qAdm);
-  const lista=db.clientes.filter(c=>!q||norm(c.nombre+' '+(c.telefono||'')+' '+(c.direccion||'')).includes(q)).sort((a,b)=>a.nombre.localeCompare(b.nombre,'es'));
+  const lista=db.clientes.filter(c=>!q||norm(c.nombre+' '+c.telefono+' '+c.direccion).includes(q)).sort((a,b)=>a.nombre.localeCompare(b.nombre,'es'));
   $('#lista').innerHTML=lista.length?`<div class="tabla"><table><thead><tr><th>Nombre</th><th>Teléfono</th><th>Dirección</th><th>Cumpleaños</th><th>Compras</th><th></th></tr></thead><tbody>
     ${lista.map(c=>{
       const cv=db.ventas.filter(v=>!v.anulada&&v.clienteId===c.id);
       return `<tr><td><b>${esc(c.nombre)}</b>${c.notas?`<br><span class="muted" style="font-size:12px">${esc(c.notas)}</span>`:''}</td>
         <td>${esc(c.telefono||'—')}</td><td>${esc(c.direccion||'—')}</td><td>${fmtCumple(c.cumple)||'—'}</td>
         <td>${cv.length?`${cv.length} · ${rd(cv.reduce((a,v)=>a+v.total,0))}`:'—'}</td>
-        <td style="white-space:nowrap">${c.telefono?`<a class="peq" style="text-decoration:none;border:1px solid var(--wa);border-radius:8px;padding:4px 9px;color:#128c4a;font-size:13px" href="${waLink('',telWa(c.telefono))}" target="_blank" rel="noopener">WhatsApp</a> `:''}<button class="peq" data-act="editCli" data-id="${c.id}">Editar</button> <button class="peq peligro" data-act="delCli" data-id="${c.id}">Eliminar</button></td></tr>`;
+        <td style="white-space:nowrap">${c.telefono?`<a style="text-decoration:none;border:1px solid var(--wa);border-radius:8px;padding:4px 9px;color:#128c4a;font-size:13px" href="${waLink('',telWa(c.telefono))}" target="_blank" rel="noopener">WhatsApp</a> `:''}<button class="peq" data-act="editCli" data-id="${c.id}">Editar</button> <button class="peq peligro" data-act="delCli" data-id="${c.id}">Eliminar</button></td></tr>`;
     }).join('')}</tbody></table></div>`
     :`<p class="muted">${db.clientes.length?'Ningún cliente coincide con la búsqueda.':'Aún no hay clientes. Agrega el primero.'}</p>`;
 }
@@ -690,88 +769,70 @@ function abrirCliente(id){
     <label>Notas (gustos, tallas, preferencias)</label><textarea name="notas" rows="2">${esc(f.notas)}</textarea>
     <div class="fila" style="margin-top:18px;justify-content:flex-end"><button type="button" class="ghost" data-act="cerrarModal">Cancelar</button><button class="pri">Guardar</button></div>
   </form>`);
-  $('#fcli').onsubmit=e=>{
+  $('#fcli').onsubmit=async e=>{
     e.preventDefault();
+    const btn=e.target.querySelector('button.pri'); btn.disabled=true;
     const fd=new FormData(e.target);
     const datos={nombre:String(fd.get('nombre')).trim(),telefono:String(fd.get('telefono')).trim(),direccion:String(fd.get('direccion')).trim(),cumple:String(fd.get('cumple')||''),notas:String(fd.get('notas')).trim()};
-    if(!datos.nombre) return toast('Falta el nombre');
-    if(editId) Object.assign(db.clientes.find(x=>x.id===editId),datos);
-    else db.clientes.push(Object.assign({id:uid(),creado:Date.now()},datos));
-    guardar(); cerrarModal(); pintarTab(); toast('Cliente guardado');
+    if(!datos.nombre){btn.disabled=false;return toast('Falta el nombre');}
+    try{
+      const guardado=await remotoGuardarCliente(datos,editId);
+      if(editId) Object.assign(db.clientes.find(x=>x.id===editId),guardado);
+      else db.clientes.push(guardado);
+      cerrarModal(); pintarTab(); toast('Cliente guardado');
+    }catch(err){btn.disabled=false;toast('No se guardó: '+err.message);}
   };
 }
-function eliminarCliente(id){const c=db.clientes.find(x=>x.id===id);if(!c)return;if(!confirm(`¿Eliminar a ${c.nombre}? Sus ventas se conservan como "sin cliente".`))return;db.clientes=db.clientes.filter(x=>x.id!==id);db.ventas.forEach(v=>{if(v.clienteId===id){v.clienteId=null;}});guardar();pintarTab();toast('Cliente eliminado');}
+async function eliminarCliente(id){
+  const c=db.clientes.find(x=>x.id===id); if(!c) return;
+  if(!confirm(`¿Eliminar a ${c.nombre}? Sus ventas se conservan como "sin cliente".`)) return;
+  try{
+    await remotoBorrarCliente(id);
+    db.clientes=db.clientes.filter(x=>x.id!==id);
+    db.ventas.forEach(v=>{if(v.clienteId===id){v.clienteId=null;v.clienteNombre='Sin cliente';}});
+    pintarTab(); toast('Cliente eliminado');
+  }catch(err){toast('No se eliminó: '+err.message);}
+}
 
 /* ---------- admin: ajustes ---------- */
 function pintarAjustes(){
-  const c=db.config;
+  const c=CONF;
   $('#tab').innerHTML=`
   <div class="panel"><h3>Datos de la tienda</h3>
-    ${!c.whatsapp?'<div class="aviso" style="margin-top:12px">Falta el número de WhatsApp. Los botones de pedido abrirán WhatsApp sin destinatario hasta que lo pongas aquí.</div>':''}
+    ${!c.whatsapp?'<div class="aviso" style="margin-top:12px">Falta el número de WhatsApp. Los botones de pedido no tendrán destinatario.</div>':''}
     <label>Nombre de la tienda</label><input id="aj_tienda" value="${esc(c.tienda)}">
-    <div class="fila"><div><label>WhatsApp de la tienda</label><input id="aj_wa" inputmode="tel" placeholder="18095551234" value="${esc(c.whatsapp)}"><div class="muted" style="font-size:12px;margin-top:4px">Con código de país, sin + ni espacios. Ej: 18095551234</div></div>
-      <div><label>PIN de administración</label><input id="aj_pin" value="${esc(c.pin)}"></div></div>
+    <div class="fila"><div><label>WhatsApp de la tienda</label><input id="aj_wa" inputmode="tel" placeholder="18095551234" value="${esc(c.whatsapp)}"><div class="muted" style="font-size:12px;margin-top:4px">Con código de país, sin + ni espacios. Ej: 18095551234</div></div></div>
     <div class="fila"><div><label>Empaque normal RD$</label><input id="aj_en" type="number" min="0" value="${c.empaqueNormal}"></div>
       <div><label>Empaque de regalo RD$</label><input id="aj_er" type="number" min="0" value="${c.empaqueRegalo}"></div>
       <div><label>Descuento de cumpleaños %</label><input id="aj_dc" type="number" min="0" max="100" value="${c.descCumple}"></div></div>
     <div style="margin-top:14px"><button class="pri" data-act="guardarAjustes">Guardar ajustes</button></div>
   </div>
-  <div class="panel"><h3>Datos y respaldo</h3>
-    <p class="muted">Los datos se guardan en este navegador. Descarga un respaldo de vez en cuando y antes de cambiar de equipo.</p>
+  <div class="panel"><h3>Sesión y respaldo</h3>
+    <p class="muted">Sesión iniciada como ${esc(sesion?sesion.email:'')}. Los datos viven en la base de datos de Supabase.</p>
     <div class="fila" style="margin-top:10px">
-      <button data-act="exportar">Descargar respaldo</button>
-      <button data-act="importarPick">Restaurar respaldo</button>
-      <input type="file" id="archivoImport" accept="application/json" hidden>
-    </div>
-    <div class="fila" style="margin-top:14px">
-      <button data-act="quitarEjemplos">Quitar productos de ejemplo</button>
-      <button class="peligro" data-act="salirAdmin">Cerrar sesión admin</button>
+      <button data-act="exportar">Descargar respaldo (JSON)</button>
+      <button class="peligro" data-act="salirAdmin">Cerrar sesión</button>
     </div>
   </div>`;
 }
-function guardarAjustes(){
-  db.config.tienda=$('#aj_tienda').value.trim()||'Beyou';
-  db.config.whatsapp=telWa($('#aj_wa').value);
-  db.config.pin=$('#aj_pin').value.trim()||'1234';
-  db.config.empaqueNormal=Math.max(0,Number($('#aj_en').value)||0);
-  db.config.empaqueRegalo=Math.max(0,Number($('#aj_er').value)||0);
-  db.config.descCumple=Math.min(100,Math.max(0,Number($('#aj_dc').value)||0));
-  guardar(); pintarTab(); toast('Ajustes guardados');
+async function guardarAjustes(){
+  const nuevo={tienda:$('#aj_tienda').value.trim()||'Beyou',whatsapp:telWa($('#aj_wa').value),
+    empaqueNormal:Math.max(0,Number($('#aj_en').value)||0),empaqueRegalo:Math.max(0,Number($('#aj_er').value)||0),
+    descCumple:Math.min(100,Math.max(0,Number($('#aj_dc').value)||0))};
+  const previo=CONF; CONF=nuevo;
+  try{await remotoGuardarConfig();pintar();toast('Ajustes guardados');}
+  catch(err){CONF=previo;toast('No se guardó: '+err.message);}
 }
 function exportar(){
-  const blob=new Blob([JSON.stringify(db,null,2)],{type:'application/json'});
+  const blob=new Blob([JSON.stringify({config:CONF,productos:db.productos,clientes:db.clientes,ventas:db.ventas},null,2)],{type:'application/json'});
   const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=`beyou-respaldo-${fechaLocal()}.json`;a.click();
   setTimeout(()=>URL.revokeObjectURL(a.href),1000);
 }
-function importarArchivo(file){
-  const r=new FileReader();
-  r.onload=()=>{
-    try{
-      const d=JSON.parse(r.result);
-      if(!d||!Array.isArray(d.productos)) throw new Error('formato');
-      if(!confirm('Esto reemplaza los datos actuales de este navegador. ¿Continuar?')) return;
-      db=Object.assign(nuevaDB(),d,{config:Object.assign(nuevaDB().config,d.config||{})});
-      guardar(); pintarTab(); toast('Respaldo restaurado');
-    }catch(e){toast('El archivo no es un respaldo válido');}
-  };
-  r.readAsText(file);
-}
-function quitarEjemplos(){
-  const n=db.productos.filter(p=>p.ejemplo).length;
-  if(!n) return toast('No hay productos de ejemplo');
-  if(!confirm(`¿Quitar ${n} productos de ejemplo?`)) return;
-  db.productos=db.productos.filter(p=>!p.ejemplo); guardar(); pintarTab(); toast('Ejemplos quitados');
-}
 
-/* ---------- rutas y eventos ---------- */
-function route(){
-  const admin=location.hash==='#/admin';
-  document.body.classList.toggle('admin',admin);
-  if(admin) renderAdmin(); else renderTienda();
-  pintarCarrito();
-}
+/* ---------- eventos ---------- */
 const acciones={
-  cat:el=>{estado.cat=el.dataset.cat;estado.q='';$('#buscar').value='';if(location.hash==='#/admin')location.hash='#/';else renderTienda();toggleCarrito(false);window.scrollTo({top:0,behavior:'smooth'});},
+  cat:el=>{estado.cat=el.dataset.cat;estado.q='';$('#buscar').value='';if(location.hash==='#/admin')location.hash='#/';else pintar();toggleCarrito(false);window.scrollTo({top:0,behavior:'smooth'});},
+  reintentar:()=>recargar(),
   add:el=>addCarrito(el.dataset.id),
   abrirCarrito:()=>toggleCarrito(true),
   cerrarCarrito:()=>toggleCarrito(false),
@@ -788,13 +849,11 @@ const acciones={
   addItem:()=>addItem(),
   ventaQty:el=>cambiarCantVenta(el.dataset.id,Number(el.dataset.d)),
   ventaQuitar:el=>{borrador.items=borrador.items.filter(i=>i.id!==el.dataset.id);pintarTab();},
-  registrarVenta:()=>registrarVenta(),
+  registrarVenta:el=>registrarVenta(el),
   anularVenta:el=>anularVenta(el.dataset.id),
   guardarAjustes:()=>guardarAjustes(),
   exportar:()=>exportar(),
-  importarPick:()=>$('#archivoImport').click(),
-  quitarEjemplos:()=>quitarEjemplos(),
-  salirAdmin:()=>{sessionStorage.removeItem('beyou_admin');location.hash='#/';toast('Sesión admin cerrada');},
+  salirAdmin:()=>salirAdmin(),
   cerrarModal:()=>cerrarModal()
 };
 document.addEventListener('click',e=>{
@@ -803,7 +862,7 @@ document.addEventListener('click',e=>{
   if(!el) return;
   if(el.tagName==='A'&&el.getAttribute('href')==='#') e.preventDefault();
   const fn=acciones[el.dataset.act];
-  if(fn){ if(el.tagName==='A'&&el.getAttribute('href')&&el.getAttribute('href').startsWith('#/')&&el.dataset.act!=='cat') {} fn(el,e); }
+  if(fn) Promise.resolve(fn(el,e)).catch(err=>toast(err.message||'Algo salió mal'));
 });
 document.addEventListener('input',e=>{
   const el=e.target;
@@ -820,20 +879,15 @@ document.addEventListener('change',e=>{
     comprimir(el.files[0]).then(d=>{fotoTmp=d;$('#prev').innerHTML=`<div class="thumb" style="width:80px;height:80px"><img src="${d}"></div>`;}).catch(()=>toast('No pude leer la imagen'));
     return;
   }
-  if(el.id==='archivoImport'&&el.files[0]){importarArchivo(el.files[0]);el.value='';return;}
   if(el.dataset.bind){
     setPath(borrador,el.dataset.bind,valorDe(el));
     if(el.dataset.bind==='cliente') borrador.descCumple=!!elegibleCumple();
-    if(el.dataset.bind==='prodSel'&&el.value==='') borrador.prodSel='';
     pintarTab();
   }
 });
-window.addEventListener('hashchange',route);
-if(!localStorage.getItem(LS)){
-  db.productos=EJEMPLOS.map(p=>Object.assign({id:uid(),foto:'',activo:true,ejemplo:true,creado:Date.now()},p));
-  guardar();
-}
-route();
+window.addEventListener('hashchange',()=>pintar());
+pintar();
+recargar();
 </script>
 </body>
 </html>
