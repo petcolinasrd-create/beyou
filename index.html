@@ -307,7 +307,8 @@ function normVenta(v,clis){const cl=clis.find(c=>c.id===v.cliente_id);return {id
   descuento:Number(v.descuento)||0,descCumple:v.desc_cumple_pct||0,cumpleAnio:v.cumple_anio,empaque:v.empaque,costoEmpaque:Number(v.costo_empaque)||0,total:Number(v.total)||0,pago:v.pago,nota:v.nota||'',anulada:!!v.anulada};}
 
 async function cargarTodo(){
-  const [prods,cfg]=await Promise.all([sb('productos?select=*&order=nombre.asc'),sb('configuracion?select=valor&clave=eq.general')]);
+  const colsPublicas='id,nombre,categoria,descripcion,precio,stock,foto,activo,creado';
+  const [prods,cfg]=await Promise.all([sb('productos?select='+(sesion?'*':colsPublicas)+'&order=nombre.asc'),sb('configuracion?select=valor&clave=eq.general')]);
   db.productos=prods.map(normProd);
   if(cfg&&cfg[0]) CONF=Object.assign({},CONF,cfg[0].valor);
   if(sesion){
