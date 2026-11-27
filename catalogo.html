@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Catálogo · Beyou</title>
+<meta name="description" content="Catálogo de joyería y bisutería Beyou, con precios y disponibilidad.">
+<meta name="color-scheme" content="light">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--oliva:#3f4d2f;--crema:#f5f0e6;--crema-2:#ebe3d3;--oro:#b8975a;--tinta:#2a2822;--gris:#77715f;--borde:#e4dccb;--peligro:#a3261b;--ok:#3f6b3a;--wa:#25d366}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{font-family:Inter,system-ui,sans-serif;color:var(--tinta);background:#fff;font-size:15px;line-height:1.5}
+h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;margin:0;line-height:1.1}
+button,input{font:inherit}
+.top{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid var(--borde)}
+.top-in{max-width:1200px;margin:auto;display:flex;align-items:center;gap:16px;padding:14px 18px;flex-wrap:wrap}
+.logo{font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:600;color:var(--oliva);line-height:1}
+.logo small{display:block;font-family:Inter,sans-serif;font-size:9px;letter-spacing:3px;color:var(--gris);margin-top:4px;text-transform:uppercase}
+.buscar{margin-left:auto;width:260px;max-width:100%}
+.buscar input{width:100%;padding:9px 14px;border:1px solid var(--borde);border-radius:999px;background:var(--crema)}
+.cats{max-width:1200px;margin:auto;display:flex;gap:6px;overflow-x:auto;padding:0 18px 12px;scrollbar-width:none}
+.cats button{border:none;background:none;padding:6px 12px;font-size:14px;white-space:nowrap;color:var(--gris);border-radius:999px;cursor:pointer}
+.cats button.on{color:var(--oliva);font-weight:600;background:var(--crema)}
+.intro{background:linear-gradient(100deg,var(--crema),var(--crema-2));text-align:center;padding:34px 18px}
+.intro h1{font-size:44px}
+.intro p{margin:8px 0 0;color:var(--gris)}
+.grid{max-width:1200px;margin:24px auto;padding:0 18px;display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:22px}
+.card{display:flex;flex-direction:column;gap:6px}
+.foto{aspect-ratio:1/1;border-radius:12px;background:linear-gradient(140deg,var(--crema),var(--crema-2));display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative}
+.foto img{width:100%;height:100%;object-fit:cover}
+.foto .ini{font-family:'Cormorant Garamond',serif;font-size:72px;color:var(--oro)}
+.tag{position:absolute;left:10px;top:10px;background:var(--tinta);color:#fff;font-size:11px;padding:3px 9px;border-radius:999px}
+.cat{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gris);margin-top:8px}
+.card h3{font-size:22px;line-height:1.2}
+.desc{font-size:13px;color:var(--gris);min-height:20px}
+.precio{font-weight:600;font-size:17px}
+.stock{font-size:13px;color:var(--ok)}
+.stock.agotado{color:var(--peligro)}
+.wa{display:block;margin-top:8px;text-align:center;text-decoration:none;border:1px solid var(--wa);color:#128c4a;border-radius:8px;padding:9px;font-size:14px;font-weight:600}
+.vacio{grid-column:1/-1;text-align:center;color:var(--gris);padding:40px}
+.pie{border-top:1px solid var(--borde);background:var(--crema);text-align:center;font-size:13px;color:var(--gris);padding:22px 18px;margin-top:20px}
+.pie a{color:#128c4a;font-weight:600}
+@media (max-width:560px){.grid{grid-template-columns:repeat(2,1fr);gap:14px}.intro h1{font-size:34px}.buscar{width:100%;margin-left:0}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="top-in">
+    <div class="logo">Beyou<small>Joyería &amp; bisutería</small></div>
+    <div class="buscar"><input id="buscar" type="search" placeholder="Buscar collar, pulsera…"></div>
+  </div>
+  <nav id="cats" class="cats" aria-label="Categorías"></nav>
+</header>
+
+<section class="intro">
+  <h1>Catálogo de piezas</h1>
+  <p>Precios y disponibilidad actualizados. Escríbenos por WhatsApp para apartar la tuya.</p>
+</section>
+
+<main id="grid" class="grid"><div class="vacio">Cargando el catálogo…</div></main>
+
+<footer class="pie">
+  <div>© Beyou · Pedidos y dudas por <a id="pieWa" href="#" target="_blank" rel="noopener">WhatsApp</a></div>
+</footer>
+
+<script>
+const SB_URL='https://zxrbmvwzhvgwduuzbgfa.supabase.co';
+const SB_KEY='sb_publishable_VMPNlswdGeITt7vlhXONhg_eAWh9aTf';
+const COLS='id,nombre,categoria,descripcion,precio,stock,foto,activo,creado';
+const CATEGORIAS=['Collares','Pulseras','Chokers','Aretes','Anillos','Tobilleras','Sets','Accesorios'];
+
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const rd=n=>'RD$ '+Number(n||0).toLocaleString('es-DO',{maximumFractionDigits:2});
+const norm=s=>String(s??'').normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase();
+
+let productos=[], whatsapp='', tienda='Beyou', categoria='Todas', q='', error='';
+
+function telWa(t){let d=String(t||'').replace(/\D/g,'');if(d.length===10)d='1'+d;return d;}
+function waLink(texto){return `https://wa.me/${telWa(whatsapp)}?text=${encodeURIComponent(texto)}`;}
+
+async function leer(path){
+  const r=await fetch(SB_URL+'/rest/v1/'+path,{headers:{apikey:SB_KEY}});
+  if(!r.ok) throw new Error('No se pudo leer el catálogo ('+r.status+')');
+  return r.json();
+}
+async function cargar(){
+  try{
+    const [prods,cfg]=await Promise.all([
+      leer('productos?select='+COLS+'&order=nombre.asc'),
+      leer('configuracion?select=valor&clave=eq.general')
+    ]);
+    productos=prods.filter(p=>p.activo);
+    if(cfg&&cfg[0]){whatsapp=cfg[0].valor.whatsapp||'';tienda=cfg[0].valor.tienda||tienda;}
+    error='';
+  }catch(e){error=e.message;}
+  pintar();
+}
+
+function pintarCats(){
+  $('#cats').innerHTML=['Todas',...CATEGORIAS].map(c=>`<button class="${categoria===c?'on':''}" data-cat="${c}">${c==='Todas'?'Todo':c}</button>`).join('');
+  const pie=$('#pieWa'); if(pie) pie.href=waLink('Hola Beyou 👋 Tengo una pregunta sobre el catálogo.');
+  document.title=tienda+' · Catálogo';
+}
+
+function pintar(){
+  pintarCats();
+  const grid=$('#grid');
+  if(error){grid.innerHTML=`<div class="vacio">No pudimos cargar el catálogo. Intenta de nuevo en un momento.<br><small>${esc(error)}</small></div>`;return;}
+  const busq=norm(q);
+  const lista=productos.filter(p=>(categoria==='Todas'||p.categoria===categoria)
+    &&(!busq||norm([p.nombre,p.categoria,p.descripcion].join(' ')).includes(busq)));
+  grid.innerHTML=lista.length?lista.map(p=>{
+    const agotado=Number(p.stock)<=0;
+    const msg=agotado
+      ? `Hola Beyou 👋 Me interesa *${p.nombre}* (${rd(p.precio)}). ¿Cuándo tendrán disponibilidad?`
+      : `Hola Beyou 👋 Me interesa *${p.nombre}* (${rd(p.precio)}). ¿Sigue disponible?`;
+    return `<article class="card">
+      <div class="foto">${p.foto?`<img src="${p.foto}" alt="${esc(p.nombre)}" loading="lazy">`:`<span class="ini">${esc((p.nombre||'B').charAt(0).toUpperCase())}</span>`}${agotado?'<span class="tag">Agotado</span>':''}</div>
+      <div class="cat">${esc(p.categoria)}</div>
+      <h3>${esc(p.nombre)}</h3>
+      <div class="desc">${esc(p.descripcion)}</div>
+      <div class="precio">${rd(p.precio)}</div>
+      <div class="stock ${agotado?'agotado':''}">${agotado?'Agotado por ahora':'Disponibles: '+p.stock}</div>
+      <a class="wa" href="${waLink(msg)}" target="_blank" rel="noopener">Preguntar por WhatsApp</a>
+    </article>`;
+  }).join(''):`<div class="vacio">${productos.length?'No encontramos piezas con esa búsqueda.':'Pronto subiremos nuevas piezas.'}</div>`;
+}
+
+document.addEventListener('click',e=>{
+  const b=e.target.closest('[data-cat]');
+  if(b){categoria=b.dataset.cat;pintar();}
+});
+$('#buscar').addEventListener('input',e=>{q=e.target.value;pintar();});
+cargar();
+</script>
+</body>
+</html>
